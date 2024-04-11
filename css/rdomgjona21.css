@@ -1,0 +1,408 @@
+/* Početna*/
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+nav{
+    display: flex;
+}
+
+body {
+    margin: 0;
+    font-family: "Noto Serif Display", serif;
+    font-optical-sizing: auto;
+    font-weight:500;
+}
+
+h2{
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+p{
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.nav-ul {
+    display: flex;
+    align-items:end; /* Align items vertically */
+    justify-content: end; /* Distribute items evenly */
+    padding: 10px 20px; /* Add padding for better spacing */
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 22px;
+}
+
+#header {
+    margin-top: 40px;
+    margin-right: auto;
+    margin-left: 50px;
+}
+
+#menu-toggle{
+    display: none;
+}
+
+#burger-menu{
+    display: none;
+}
+
+
+.nav-item {
+    margin-top:10px;
+    margin-right: 20px;
+    padding: 5px 10px;
+    cursor: pointer;
+    padding-top: 15px;
+    margin-bottom: 5px;
+}
+
+.nav-item-divider{
+    margin-top: 10px;
+    margin-right: 20px;
+    padding: 5px 10px; 
+    padding-top: 15px;
+    margin-bottom: 5px
+}
+
+/* Add this CSS to change color on hover */
+.nav-item:hover {
+    color:blueviolet;
+    border-bottom: black solid 1px;
+}
+
+#header-img {
+    height: 60px;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+
+.slike-mapa{
+    display: flex;
+}
+
+#slike{
+    border: black solid 1px;
+    margin: 5px;
+    padding: 20px;
+}
+
+#mapa{
+    border: black solid 1px;
+    margin: 5px;
+}
+
+#mapa > h2{
+    font-size: 60px;
+    text-align: center;
+    font-weight: 900;
+    border: black solid 1px;
+    margin: 10px;
+    margin-top: 70px;
+    margin-bottom: 170px;
+}
+
+#slike > h2{
+    color: black;
+    font-weight:bolder;
+    font-size: 40pt;
+    border: black solid 1px;
+    padding: 10px;
+    width: fit-content;
+    color: rgb(118, 38, 192);
+}
+
+.slike-red > h2 {
+    font-size: 60px;
+    font-weight: 900;
+    border: black solid 1px;
+    height:fit-content;
+    width: fit-content;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+
+#p-novosti{
+    display: inline-block;
+    margin-left: 20px;
+}
+
+#slike > p{
+    color: black;
+}
+
+.img-red{
+    height: 200px;
+    width: 100%;
+}
+
+.slike-red{
+    display: flex;
+    justify-content: start;
+}
+
+.slike-red > div{
+    margin: 20px;
+    border: black solid 1px;
+    width: fit-content;
+    height: fit-content;
+
+}
+
+#p-dobrodosli{
+    text-align: center;
+    font-size: 25px;
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+#html-img-footer{
+    height: 50px;
+}
+
+footer{
+    text-align: center;
+}
+
+/* Galerija slika*/
+
+#abs{
+    display: flex;
+}
+
+
+#abs-img-div{
+    height:fit-content;
+}
+
+#main-gallery{
+   display: flex;
+    gap: 100px;
+    margin-left: 50px;
+    margin-right:50px;
+    justify-content: center;
+}
+
+#main-rothko{
+    width: 100%;
+    transition: transform 0.3s ease;
+    margin-bottom: 20px;
+}
+
+#main-rothko:hover{
+    transform: scale(1.2);
+}
+
+#secondary-rothko{
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  gap: 30px;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.gallery-rothko{
+    width:300px;
+    height:350px;
+    transition: transform 0.3s ease;
+
+}
+
+.gallery-rothko:hover{
+    transform: scale(1.3);
+}
+
+#div-main-rothko{
+    width: fit-content;
+    border: black solid 1px;
+    display:block;
+
+}
+
+.gallery-rothko-div{
+    width: fit-content;
+    border: black solid 1px;
+    height: 420px;
+}
+
+.abstract-exp{
+    background-image: url('../resursi/slike/retrospective_mark_rothko_fondation_vuitton_2023_6.jpeg'); /* Replace 'path_to_your_image.jpg' with the path to your image */
+    background-size: cover; /* Cover the entire container */
+    background-position: center; /* Center the image */
+    width:100%; /* Ensure the container fills its parent */
+    height: 100%; /* Ensure the container fills its parent */
+    /* Optionally, you can add other styles to the container */
+}
+
+
+@media screen and (min-width:1450px){
+    #p-dobrodosli{
+        font-size: 55px;
+    }
+    #slike > p{
+        color: black;
+        font-size: 22px;
+    }
+}
+
+@media screen and (max-width:1150px) {
+    .nav-ul{
+        display: none;
+    }
+    nav{
+        display: block;
+    }
+    .nav-item-divider{
+        display: none;
+    }
+
+   #header{
+    display: grid;
+    grid-template-rows: 100%;
+    grid-template-columns: 40% 1fr;
+    margin-left: 0%;
+   }
+
+
+   .slike-mapa{
+    display: block;
+   }
+
+   #mapa{
+    display: flex;
+    justify-content: space-between;
+   }
+   #mapa > h2{
+    height: fit-content;
+    padding: 10px;
+    margin-left: 20px;    
+    margin-right: 20px;
+   }
+   #gmaps-xs{
+    width: 100%;
+    }
+
+       /* Hide the checkbox */
+#menu-toggle {
+    display: none;
+}
+
+/* Style the burger icon */
+
+#burger-menu {
+    display: flex;
+    font-size: 30px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+#menu-toggle:checked ~ .nav-ul {
+    display: block;
+}
+
+}
+
+@media screen and (max-width:800px) {
+    .slike-red{
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width:580px){
+    #mapa{
+        display: block;
+    }
+
+    #mapa > h2{
+        padding: 10px;
+        margin-left: 20px;    
+        margin-bottom: 100px;
+        margin-right: 20px;
+       }
+
+    #gmaps-xs{
+        width: 100%;
+    }   
+}
+/* Galerija slike*/
+
+@media screen and (max-width:2100px) {
+  #main-gallery{
+  display: inline-block;
+  margin-left: 10%;
+  }
+  #main-rothko{
+    height: 500px;
+    
+  }
+  
+  #div-main-rothko{
+    margin-bottom: 40px;
+  }
+
+  #secondary-rothko{
+    margin-bottom: 10%;
+  }
+
+
+}
+
+@media screen and (max-width:1450px) {
+    #secondary-rothko{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    width: 100%;
+    justify-content: center;
+    }
+
+
+  }
+
+  @media screen and (max-width:750px) {
+    #secondary-rothko{
+    display: inline-block;
+    gap: 10px;
+    }
+
+    .gallery-rothko-div{
+        margin-bottom: 20px;
+    }
+
+    }
+
+    @media screen and (max-width:450px) {
+        .banner > h2{
+            padding-right: 0%;
+            margin-right: 0%;
+        }
+
+        #main-gallery{
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+
+    }
+
+    
