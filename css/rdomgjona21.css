@@ -1,5 +1,7 @@
+*{
+    color: black;
+}
 /* Početna*/
-
 ul {
     list-style: none;
     padding: 0;
@@ -16,8 +18,7 @@ nav{
 
 body {
     margin: 0;
-    font-family: "Noto Serif Display", serif;
-    font-optical-sizing: auto;
+    font-family:Arial, Helvetica, sans-serif;
     font-weight:500;
 }
 
@@ -46,6 +47,7 @@ p{
     margin-top: 40px;
     margin-right: auto;
     margin-left: 50px;
+    position: relative;
 }
 
 #menu-toggle{
@@ -74,7 +76,6 @@ p{
     margin-bottom: 5px
 }
 
-/* Add this CSS to change color on hover */
 .nav-item:hover {
     color:blueviolet;
     border-bottom: black solid 1px;
@@ -93,8 +94,12 @@ p{
 }
 
 
+#main-img{
+    width: 70%;
+}
+
 .slike-mapa{
-    display: flex;
+    display: block;
 }
 
 #slike{
@@ -106,6 +111,8 @@ p{
 #mapa{
     border: black solid 1px;
     margin: 5px;
+    display: flex;
+    justify-content: space-between;
 }
 
 #mapa > h2{
@@ -116,7 +123,16 @@ p{
     margin: 10px;
     margin-top: 70px;
     margin-bottom: 170px;
+    height: fit-content;
+    padding: 10px;
+    margin-left: 20px;    
+    margin-right: 140px;
+       
 }
+
+#gmaps-xs{
+    width: 100%;
+}  
 
 #slike > h2{
     color: black;
@@ -148,9 +164,19 @@ p{
     color: black;
 }
 
+.kljucna-vijest{
+    width: 400px;
+    overflow: visible;
+}
+
 .img-red{
     height: 200px;
     width: 100%;
+}
+
+p.text{
+    text-wrap: wrap;
+    font-size: 14px;
 }
 
 .slike-red{
@@ -161,9 +187,6 @@ p{
 .slike-red > div{
     margin: 20px;
     border: black solid 1px;
-    width: fit-content;
-    height: fit-content;
-
 }
 
 #p-dobrodosli{
@@ -174,7 +197,7 @@ p{
     font-style: normal;
 }
 
-#html-img-footer{
+.html-img-footer{
     height: 50px;
 }
 
@@ -182,7 +205,7 @@ footer{
     text-align: center;
 }
 
-/* Galerija slika*/
+/* Izložba*/
 
 #abs{
     display: flex;
@@ -245,15 +268,194 @@ footer{
 }
 
 .abstract-exp{
-    background-image: url('../resursi/slike/retrospective_mark_rothko_fondation_vuitton_2023_6.jpeg'); /* Replace 'path_to_your_image.jpg' with the path to your image */
-    background-size: cover; /* Cover the entire container */
-    background-position: center; /* Center the image */
-    width:100%; /* Ensure the container fills its parent */
-    height: 100%; /* Ensure the container fills its parent */
-    /* Optionally, you can add other styles to the container */
+    background-image: url('../resursi/slike/retrospective_mark_rothko_fondation_vuitton_2023_6.jpeg');
+    background-size: auto;
+    background-position: center;
+    width:100%;
+    height: 100%;
+}
+
+.light-space{
+    background-image: url('../resursi/slike/turrell-1024x677.jpg');
+    background-size: auto;
+    background-position: center;
+    width:100%;
+    height: 100%;
+}
+
+.jmb{
+    background-image: url('../resursi/slike/jmb8.jpeg');
+    background-size: cover;
+    background-position: center;
+    width:100%;
+    height: 100%; 
+}
+
+.jmb ~ .uskoro{
+    background-color: crimson;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.display{
+    display: flex;
+}
+
+.izlozba{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.izb{
+    height: 350px;
+}
+
+.banner{
+    border: black solid 1px;
+}
+
+.banner-img{
+    height: 180px;
+    width: 100%;
+}
+
+.kupi{
+    border: black solid 1px;
+    display: inline-block;
+    padding: 10px;margin-bottom: 50px;
+}
+
+.kupi:hover{
+    background-color:rgb(238, 238, 238);
+    color: darkviolet;
+}
+
+/* Kolekcija slika */
+
+#main-row > th{
+    color: white;
+}
+
+#table-kolekcija{
+    display: flex;
+    justify-content: center;
+}
+
+table {
+    border: 2px solid rgb(140 140 140);
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+    border-collapse: collapse;
+  }
+
+thead{
+    background-color: rgb(150, 150, 150);
+  color: white;
+  font-size: 20px;
+}
+
+caption {
+    caption-side: top;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 24px;
+    margin: 20px;
+  }
+
+  th,td {
+  border: 1px solid rgb(160 160 160);
+  padding: 8px 10px;
+}
+
+#blank-space{
+    background-color: white;
+}
+
+td {
+    text-align: center;
+  }
+
+
+td > img{
+    width: 300px;
+    height: 300px;
+}
+
+tfoot{
+    background-color: rgb(150, 150, 150);
+}
+
+.web-img{
+    width: 300px;
+}
+
+/*Kupnja karata*/
+form{
+    margin-left: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#h2-karte{
+    margin-left: 50px;
+}
+
+fieldset{
+    display: inline-block;
+}
+
+input{
+    margin: 5px;
 }
 
 
+/*Stranica detalja - Mark Rothko*/
+#m-rothko-detalj{
+    text-align: center;
+}
+
+#m-rothko-media{
+text-align: center;
+}
+
+.m-rothko-detalji-h2 + h2{
+    text-align: end;margin-right: 50px;
+}
+
+.ball {
+    width: 100px;
+    height: 100px;
+    background-color:darkmagenta;
+    border-radius: 50%;
+    position: relative;
+    animation: bounce 5s infinite linear;
+    margin-top: 20px;
+}
+
+/*Stranica detalja - Grupni posjeti*/
+.text-posjeti > p{
+    text-align: center;
+    padding-left: 25%;
+    padding-right:25%;
+}
+
+/*Animacija*/
+@keyframes bounce {
+    0% {
+        left: 0;
+    }
+    50% {
+        left: calc(100% - 100px); /* Adjust this value according to your needs */
+    }
+    100% {
+        left: 0;
+    }
+}
+
+/*--------------media-screen-----------------*/
+
+/*Početna*/
 @media screen and (min-width:1450px){
     #p-dobrodosli{
         font-size: 55px;
@@ -261,6 +463,13 @@ footer{
     #slike > p{
         color: black;
         font-size: 22px;
+    }
+    #header-a{
+        display: flex;
+        justify-content: center;
+       }
+    .nav-ul{
+        position: relative;
     }
 }
 
@@ -278,8 +487,13 @@ footer{
    #header{
     display: grid;
     grid-template-rows: 100%;
-    grid-template-columns: 40% 1fr;
+    grid-template-columns: 25% 50% 25%;
     margin-left: 0%;
+   }
+
+   #header-a{
+    display: flex;
+    justify-content: center;
    }
 
 
@@ -295,18 +509,14 @@ footer{
     height: fit-content;
     padding: 10px;
     margin-left: 20px;    
-    margin-right: 20px;
+    margin-right: 140px;
    }
    #gmaps-xs{
     width: 100%;
     }
-
-       /* Hide the checkbox */
 #menu-toggle {
     display: none;
 }
-
-/* Style the burger icon */
 
 #burger-menu {
     display: flex;
@@ -319,17 +529,35 @@ footer{
     display: block;
 }
 
+#main-img{
+    width: 90%;
+}
+.slike-red{
+   justify-content: center;
 }
 
-@media screen and (max-width:800px) {
+}
+
+@media screen and (max-width:1000px) {
     .slike-red{
         display: grid;
-        grid-template-rows: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+    }
+    .kljucna-vijest{
+        width: 600px;
     }
 }
 
-@media screen and (max-width:580px){
+@media screen and (max-width:900px) {
+    #main-img{
+        width: 100%;
+    }
+
+    
+}
+
+@media screen and (max-width:690px){
     #mapa{
         display: block;
     }
@@ -344,8 +572,15 @@ footer{
     #gmaps-xs{
         width: 100%;
     }   
+    .kljucna-vijest{
+        margin-left: 50px;
+    }
+    .kljucna-vijest{
+        width: 300px;
+    }
+
 }
-/* Galerija slike*/
+/* Izložbe*/
 
 @media screen and (max-width:2100px) {
   #main-gallery{
@@ -377,6 +612,20 @@ footer{
     justify-content: center;
     }
 
+  }
+
+  @media screen and (max-width:1200px) {
+   .display{
+    display: block;
+   }
+
+   .banner-img{
+    height: 160px;
+   }
+
+   .izlozba{
+    display: block;
+   }
 
   }
 
@@ -390,7 +639,17 @@ footer{
         margin-bottom: 20px;
     }
 
+    .light-space{
+        background-size: auto;
     }
+
+    }
+
+    @media screen and (max-width:490px) {
+      .abstract-exp,.jmb,.light-space{
+        height: fit-content;
+      }
+}
 
     @media screen and (max-width:450px) {
         .banner > h2{
@@ -405,4 +664,29 @@ footer{
 
     }
 
-    
+/*Kolekcija slike*/
+
+@media screen and (max-width:950px) {
+    td>img{
+        width: 150px;
+        height: 150px;
+    }
+    .web-img{
+        width: 150px;
+    }
+    .nevidljivo{
+        display: none;
+    }
+}
+
+
+@media screen and (max-width:450px) {
+}
+/*Kupnja karata*/
+@media screen and (max-width:750px) {
+  form label{
+    display: block;
+  }
+}
+
+
